@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ButtonsModule } from 'ngx-bootstrap'
 
 @Component({
   selector: 'my-app',
@@ -17,7 +18,7 @@ export class AppComponent  {
 
 @Component({
 	selector: 'gay-name',
-	template: ` <button (click)="changeName('Valentina Sashay Away')"> Greedy </button>
+	template: ` <button  type="button" class="btn btn-primary" (click)="changeName('Valentina Sashay Away')"> Greedy </button>
 	`,
 })
 export class HelloGayWorld { 
